@@ -22,9 +22,11 @@ public class Book {
     }
 
     public boolean matches(String word){
-        if (word.equals(title) && word.equals(author)){
+        if (word.equals(title)){
             return true;
-        }else {
+        } else if (word.equals(author)) {
+            return true;
+        } else {
             return false;
         }
     }
